@@ -1,4 +1,7 @@
 import org.junit.Test;
+
+import javaTemplateGradle.JavaTemplateGradle;
+
 import static org.junit.Assert.*;
 
 /*
@@ -7,9 +10,9 @@ import static org.junit.Assert.*;
  *
  * @author val00362, @date 16/05/26 16:15
  */
-public class LibraryTest {
+public class JavaTemplateGradleTest {
     @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+        JavaTemplateGradle classUnderTest = new JavaTemplateGradle();
+        //assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
 }
