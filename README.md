@@ -11,3 +11,41 @@ cd javaTemplateGradle
 ```
 
 その後Eclipseにインポートする。
+
+
+## コマンドラインからのgradle使用方法
+
+タスク一覧表示
+
+```
+./gradlew tasks
+```
+
+ビルド
+
+```
+./gradlew build
+```
+
+JAR作成のみ
+
+```
+./gradlew jar
+```
+
+
+## メモ
+
+.project, .classpath, .settingsは`./gradlew eclipse`で作成でき、絶対パスを含むためgitには入れない方がいいらしい。
+
+新規にgradleプロジェクトを作成するときはEclipseのプラグインを使うより
+
+```
+mkdir p1
+cd p1
+gradle init
+# 生成されたbuild.gradleにapply plugin: 'eclipse'を追記し、コメントアウトされている部分を解除
+./gradlew eclipse
+```
+
+そしてEclipseにインポートという手順の方が何をしているか分かりやすくていいかもしれない。
