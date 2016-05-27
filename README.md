@@ -10,7 +10,7 @@ cd javaTemplateGradle
 ./gradlew eclipse
 ```
 
-その後Eclipseにインポートする。
+その後Eclipseで「File -> Import -> Existing Projects into Workspace」でインポートし、さらに「File -> Import -> Gradle Project」でGradleプロジェクトとしてインポートする。
 
 
 ## コマンドラインからのgradle使用方法
